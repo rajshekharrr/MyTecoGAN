@@ -27,7 +27,7 @@ from lib.frvsr import generator_F, fnet
 from lib.Teco import FRVSR, TecoGAN
 
 
-Flags = tf.app.flags
+Flags = tf.compat.v1.app.flags
 
 Flags.DEFINE_integer('rand_seed', 1 , 'random seed' )
 
