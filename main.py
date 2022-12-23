@@ -110,7 +110,7 @@ os.environ["CUDA_VISIBLE_DEVICES"]=FLAGS.cudaID
 my_seed = FLAGS.rand_seed
 rn.seed(my_seed)
 np.random.seed(my_seed)
-tf.set_random_seed(my_seed)
+tf.random.set_seed()
 
 # Check the output_dir is given
 if FLAGS.output_dir is None:
